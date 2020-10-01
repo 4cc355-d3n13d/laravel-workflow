@@ -38,4 +38,14 @@ trait WorkflowTrait
     {
         return $this->workflow_transitions($workflow);
     }
+
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    public function setStatus(string $status)
+    {
+        $this->status = $status;
+    }
 }
